@@ -1,0 +1,42 @@
+.topbar_section {
+    width: 100%;
+    .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: rem(70);
+        .logo-container {
+            a {
+                display: flex;
+                align-items: center;
+                color: $white;
+
+                svg {
+                    font-size: rem(35);
+                }
+
+                span {
+                    margin-left: rem(25);
+                    font-size: rem(20);
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .user-info {
+            display: flex;
+
+            li {
+                a {
+                    color: $white;
+                    font-size: rem(18);
+                }
+
+                &:not(:last-child) {
+                    margin-right: rem(15);
+                }
+            }
+        }
+    }
+}

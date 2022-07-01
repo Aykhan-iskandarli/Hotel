@@ -1,0 +1,44 @@
+@import "../abstracts/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: $white !important;
+    overflow: scroll;
+    z-index: 999;
+  &::-webkit-scrollbar {
+    display: none; 
+}
+}
+
+p,span,b,h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;  
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+*:before, *:after{
+    margin: 0;
+    padding: 0; 
+}
+
+.overlay__home{
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}

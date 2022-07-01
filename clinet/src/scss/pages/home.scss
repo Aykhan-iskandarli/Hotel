@@ -1,0 +1,66 @@
+@import "../abstracts/variables.scss";
+.header__search{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999999;
+  
+    .header__overlay{
+        border: rem(4) solid $orangeBorder ;
+        position: relative;
+        top: rem(-30);
+        background-color: $white;
+        width: rem(800);
+        .search_button{
+            height: 100%;
+            margin-right: rem(3);
+            button{
+                height: rem(45);
+                width: rem(150);
+            }
+        }
+
+    }
+
+    .header__search__input{
+        border: none;
+    }
+    .header_search_item{
+        position: relative;
+        .header__Search__Text{
+            font-size: rem(14);
+            color: $gray;
+        cursor: pointer;
+
+        }
+    }
+        
+    .date {
+        position: absolute;
+        top: rem(50);
+        z-index: 2;
+        left: 50%;
+        transform: translate(-55%,0%);
+      }
+    .options {
+        z-index: 2;
+        position: absolute;
+        top: 50px;
+        background-color: $white;
+        color: $dark-blue;
+        border-radius: 5px;
+        box-shadow: $shadowOptions;
+        width: rem(250);
+        z-index: 999999;
+        .option__Text{
+            width: rem(80);
+            font-size: rem(14);
+        }
+        .option__Item{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+      }
+}
